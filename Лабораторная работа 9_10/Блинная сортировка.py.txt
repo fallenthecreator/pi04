@@ -1,0 +1,16 @@
+def pancake_sort(arr): 
+    n = len(arr) 
+    for curr_size in range(n, 1, -1): 
+        # Находим максимум в массиве 
+        max_idx = arr.index(max(arr[:curr_size])) 
+        # Переворачиваем массив до максимум включая его 
+        if max_idx != 0: 
+            arr[:max_idx+1] = arr[:max_idx+1][::-1] 
+        # Переворачиваем весь оставшийся массив 
+        arr[:curr_size] = arr[:curr_size][::-1] 
+ 
+# Пример использования 
+array = [9, 3, 7, 1, 8, 2, 6, 5, 4] 
+print("Исходный массив:", array) 
+pancake_sort(array) 
+print("Отсортированный массив:", array)
