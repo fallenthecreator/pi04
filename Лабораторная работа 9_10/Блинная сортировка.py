@@ -13,4 +13,5 @@ def pancake_sort(arr):
 array = [9, 3, 7, 1, 8, 2, 6, 5, 4] 
 print("Исходный массив:", array) 
 pancake_sort(array) 
+
 print("Отсортированный массив:", array)
