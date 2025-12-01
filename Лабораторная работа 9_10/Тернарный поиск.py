@@ -17,4 +17,5 @@ def func(x):
  
 min_x = ternary_search(func, 0, 4) 
 print(f"Минимум функции достигается примерно в точке x = {min_x}") 
+
 print(f"Значение функции = {func(min_x)}") 
