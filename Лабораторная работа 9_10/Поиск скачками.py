@@ -28,4 +28,5 @@ index = jump_search(arr, x)
 if index != -1: 
     print(f"Элемент {x} найден на позиции {index}") 
 else: 
+
     print(f"Элемент {x} не найден в массиве")
